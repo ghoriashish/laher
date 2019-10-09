@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sucess Page</h1>
+    {% if all_doctor %}
+
+    {% for d in all_doctor %}
+
+    <img src="{{ MEDIA_URL}} {{d.profile_pic.url}}" alt="">
+    {% endfor %}
+    {% endif %}
+</body>
+</html>
